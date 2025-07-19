@@ -1,0 +1,7 @@
+import("//build/templates/build_template.gni")
+build_rust("void") {
+  crate_type = "rlib"
+  sources = [ "src/lib.rs" ]
+  edition = "2015"
+  rustflags = [ "--cap-lints=allow" ]
+}
